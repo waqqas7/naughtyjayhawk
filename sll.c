@@ -32,7 +32,7 @@ newnode=(NODE *)malloc(sizeof(NODE));
 void insert_beg()
 {
 	int value;
-	printf("\ enter the value for the node:");
+	printf("\n enter the value for the node:");
 	scanf("%d", &value);
 	newnode=getnode(value);
 	if(start==NULL)
@@ -53,7 +53,7 @@ start=newnode;
 void insert_end()
 {
 	int value;
-	printf("\ enter the value for the node:");
+	printf("\n enter the value for the node:");
 	scanf("%d", &value);
 	newnode=getnode(value);
 	if(start==NULL)
@@ -93,7 +93,7 @@ void insert_atposition()
            if(pos>1&&pos<=count)
 	{
 		currptr=start;	
-		printf("\ enter the value for the node:");
+		printf("\n enter the value for the node:");
 		scanf("%d", &value);
 		newnode=getnode(value);
 		for(i=1;i<pos-1;i++)
